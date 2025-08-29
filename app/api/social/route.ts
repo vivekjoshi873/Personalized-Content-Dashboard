@@ -1,5 +1,3 @@
-// Social proxy - uses mock data and supports hashtag param
-
 import type { PagedResponse, SocialPost } from "@/lib/types/content"
 import type { NextRequest } from "next/server"
 

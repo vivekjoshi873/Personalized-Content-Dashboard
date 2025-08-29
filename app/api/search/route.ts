@@ -1,4 +1,3 @@
-// Global search across all sources
 
 import type { NextRequest } from "next/server"
 import type { ContentItem, PagedResponse } from "@/lib/types/content"

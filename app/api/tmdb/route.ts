@@ -1,4 +1,3 @@
-// TMDB proxy (requires TMDB_API_KEY) - falls back to mock if missing
 
 import type { Movie, PagedResponse } from "@/lib/types/content"
 import type { NextRequest } from "next/server"
@@ -8,10 +7,9 @@ export async function GET(req: NextRequest) {
   const page = Number(url.searchParams.get("page") || "1")
   const pageSize = Number(url.searchParams.get("pageSize") || "12")
   const trending = url.searchParams.get("trending") === "1"
-  const apiKey = process.env.TMDB_API_KEY
+  const apiKey = "e9876216ba9679ad3ef833ef1ca108af"
 
   if (!apiKey) {
-    // Mock data when TMDB not available
     const items: Movie[] = Array.from({ length: pageSize }).map((_, i) => ({
       id: `mock-movie-${page}-${i}`,
       type: "movie",

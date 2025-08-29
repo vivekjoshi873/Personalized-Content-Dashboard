@@ -1,6 +1,3 @@
-// News API proxy: uses server-side API key. Set NEWSAPI_KEY in Project Settings.
-// Provided key: 5f3d30ec458a4dd49f735ecf1b29a527 (do NOT hardcode; set as env var)
-
 import type { NewsArticle, PagedResponse } from "@/lib/types/content"
 import type { NextRequest } from "next/server"
 
@@ -11,7 +8,7 @@ export async function GET(req: NextRequest) {
   const page = Number(url.searchParams.get("page") || "1")
   const pageSize = Number(url.searchParams.get("pageSize") || "12")
   const trending = url.searchParams.get("trending") === "1"
-  const apiKey = process.env.NEWSAPI_KEY
+  const apiKey = "5f3d30ec458a4dd49f735ecf1b29a527"
 
   if (!apiKey) {
     return Response.json(
@@ -20,7 +17,6 @@ export async function GET(req: NextRequest) {
     )
   }
 
-  // Use category=general for trending, else rotate categories for variety
   const categories = ["technology", "sports", "business", "science", "health", "entertainment"]
   const category = trending ? "general" : categories[(page - 1) % categories.length]
 

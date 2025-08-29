@@ -1,5 +1,3 @@
-// RTK Query service hitting Next.js API Routes to keep secrets on the server
-
 "use client"
 
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
