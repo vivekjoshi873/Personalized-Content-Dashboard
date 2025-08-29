@@ -1,30 +1,96 @@
-# Personalized content dashboard
+# Personalized Content Dashboard
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/vivekjoshi873s-projects/v0-personalized-content-dashboard)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/jA8Uobc2kEx)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://personalized-content-dashboard-six.vercel.app/)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+An interactive dashboard that aggregates personalized content from multiple sources (news, TMDB movies, social mocks, and search) with filtering, trending, and favorites. Built for a company assignment.
 
-## Deployment
+> Note: Sorry for the late submission. I have completed and deployed the assignment for your review.
 
-Your project is live at:
+## Live Demo
 
-**[https://vercel.com/vivekjoshi873s-projects/v0-personalized-content-dashboard](https://vercel.com/vivekjoshi873s-projects/v0-personalized-content-dashboard)**
+- App: **[personalized-content-dashboard-six.vercel.app](https://personalized-content-dashboard-six.vercel.app/)**
 
-## Build your app
+## Tech Stack
 
-Continue building your app on:
+- Next.js 15 (App Router)
+- React 19 + TypeScript 5
+- Tailwind CSS 4
+- Redux Toolkit (state management)
+- Radix UI primitives + utility components
+- Testing Library + Jest (basic tests scaffold)
+- Cursor IDE
 
-**[https://v0.app/chat/projects/jA8Uobc2kEx](https://v0.app/chat/projects/jA8Uobc2kEx)**
+## Features
 
-## How It Works
+- Aggregated feed: news, movies (TMDB), and social mock data
+- Search with server route
+- Trending and favorites sections
+- Theme switching and responsive layout
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Getting Started (Local Development)
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- API keys:
+  - `NEWSAPI_KEY` (for News API)
+  - `TMDB_API_KEY` (for TMDB)
+
+### 1) Clone and install
+
+```bash
+git clone https://github.com/vivekjoshi873/Personalized-Content-Dashboard.git
+cd Personalized-Content-Dashboard
+npm install
+```
+
+### 2) Environment variables
+
+Create a `.env` file in the project root:
+
+```bash
+NEWSAPI_KEY=your_newsapi_key_here
+TMDB_API_KEY=your_tmdb_key_here
+```
+
+### 3) Run the app
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+### 4) Production build
+
+```bash
+npm run build
+npm start
+```
+
+## Project Scripts
+
+- `npm run dev` — start local dev server
+- `npm run build` — production build
+- `npm start` — run built app
+- `npm run lint` — lint the project
+
+## Folder Structure (key paths)
+
+- `app/` — Next.js routes and pages (e.g., `app/api/*` for server routes)
+- `components/` — UI components
+- `lib/` — services, store, slices, types, and utilities
+- `public/` — static assets
+
+## Company Assignment Context
+
+This repository is structured and documented for review as part of a company assignment. It demonstrates:
+
+- Clean Next.js architecture with App Router
+- API route integrations (NewsAPI, TMDB)
+- State management and UI composition
+- Good DX: scripts, env management, and clear README
+
+If you need any changes or additions, please let me know. Thank you for your time, and again, apologies for the late submission.
