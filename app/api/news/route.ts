@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
   const page = Number(url.searchParams.get("page") || "1")
   const pageSize = Number(url.searchParams.get("pageSize") || "12")
   const trending = url.searchParams.get("trending") === "1"
-  const apiKey = "5f3d30ec458a4dd49f735ecf1b29a527"
+  const apiKey = `5f3d30ec458a4dd49f735ecf1b29a527`
 
   if (!apiKey) {
     return Response.json(

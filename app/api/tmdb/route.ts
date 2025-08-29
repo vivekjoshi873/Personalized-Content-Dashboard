@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
   const page = Number(url.searchParams.get("page") || "1")
   const pageSize = Number(url.searchParams.get("pageSize") || "12")
   const trending = url.searchParams.get("trending") === "1"
-  const apiKey = "e9876216ba9679ad3ef833ef1ca108af"
+  const apiKey = `e9876216ba9679ad3ef833ef1ca108af`
 
   if (!apiKey) {
     const items: Movie[] = Array.from({ length: pageSize }).map((_, i) => ({
