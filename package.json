@@ -39,7 +39,6 @@
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
     "@reduxjs/toolkit": "latest",
-    "@remix-run/react": "latest",
     "@sveltejs/kit": "latest",
     "@testing-library/dom": "latest",
     "@testing-library/react": "latest",
@@ -69,7 +68,6 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "use-debounce": "latest",
-    "vaul": "^0.9.9",
     "vue": "latest",
     "vue-router": "latest",
     "zod": "3.25.67"
