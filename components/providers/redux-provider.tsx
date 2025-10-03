@@ -1,5 +1,4 @@
 "use client"
-// Redux Provider wrapper for App Router
 import type React from "react"
 
 import { Provider } from "react-redux"

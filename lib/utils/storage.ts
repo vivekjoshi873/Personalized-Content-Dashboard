@@ -1,5 +1,3 @@
-// Local storage helpers with safe guards (SSR-friendly)
-
 export const safeStorage = {
   get<T>(key: string, fallback: T): T {
     if (typeof window === "undefined") return fallback

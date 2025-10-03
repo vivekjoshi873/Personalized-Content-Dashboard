@@ -39,7 +39,7 @@ export function Topbar() {
           aria-label="Global search"
         />
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 ">
         <Button
           variant="ghost"
           className={cn("h-9 w-9 p-0")}
@@ -49,7 +49,7 @@ export function Topbar() {
             setTheme(resolvedTheme === "dark" ? "light" : "dark")
           }}
         >
-          {mounted ? resolvedTheme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" /> : null}
+          {mounted ? resolvedTheme === "dark" ? <Sun className="size-4 " /> : <Moon className="size-4" /> : null}
         </Button>
       </div>
     </header>

@@ -6,7 +6,6 @@
 
 An interactive dashboard that aggregates personalized content from multiple sources (news, TMDB movies, social mocks, and search) with filtering, trending, and favorites. Built for a company assignment.
 
-> Note: Sorry for the late submission. I have completed and deployed the assignment for your review.
 
 ## Live Demo
 
